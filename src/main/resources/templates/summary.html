@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission Summary</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="summary-container">
+    <h1>Submission Complete!</h1>
+    <h2>Here's all your information:</h2>
+
+    <div class="summary-section">
+
+        <p><strong>First Name:</strong> <span th:text="${userData.firstName}"></span></p>
+        <p><strong>Last Name:</strong> <span th:text="${userData.lastName}"></span></p>
+    </div>
+
+    <div class="summary-section">
+
+        <p><strong>Email:</strong> <span th:text="${userData.email}"></span></p>
+        <p><strong>Phone:</strong> <span th:text="${userData.phone}"></span></p>
+    </div>
+
+    <div class="summary-section">
+
+        <p><strong>City:</strong> <span th:text="${userData.city}"></span></p>
+        <p><strong>Country:</strong> <span th:text="${userData.country}"></span></p>
+    </div>
+
+
+
+    <a href="/" class="restart-btn">Start New Form</a>
+</div>
+</body>
+</html>
